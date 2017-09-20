@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
-gem 'rspec'
-gem 'capybara'
 gem 'data_mapper'
-gem 'dm-postgres-adapter'
-gem 'sinatra'
-gem 'rake'
-gem 'pg'
 gem 'database_cleaner'
+gem 'dm-postgres-adapter'
+gem 'pg'
+gem 'rake'
+gem 'rubocop'
+gem 'sinatra'
 
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+end
 
-#ruby --> datamapper --> adapter --> database
+# ruby --> datamapper --> adapter --> database
