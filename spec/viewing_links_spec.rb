@@ -9,6 +9,7 @@ feature 'Viewing links' do
 
     within 'ul#links' do
       expect(page).to have_content('Makers Academy')
+      expect(page).to have_content('hello this is a test')
     end
   end
 
