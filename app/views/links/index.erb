@@ -5,6 +5,8 @@
     <li>
       Title: <%= link.title %>
       URL:   <%= link.url %>
+      Tag:   <%= link.tags.map(&:name).join(' ') %>
+      <!-- we are iterating over each element in the array and calling the method name on it -->
     </li>
   <% end %>
 </ul>

@@ -113,6 +113,8 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
     stringex (1.5.1)
     tilt (2.0.8)
     unicode-display_width (1.3.0)
@@ -124,6 +126,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   capybara
   data_mapper
   database_cleaner
@@ -133,6 +136,7 @@ DEPENDENCIES
   rspec
   rubocop
   sinatra
+  sinatra-flash
 
 BUNDLED WITH
    1.15.4
